@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>-->
+  <script src="script.js"></script>
+  <title></title>
+</head>
+
+<body>
+  <div class="site-wrapper-border"></div>
+
+  <div class="ui text container">
+    <h1>Wikipedia Explorer</h1>
+
+    <form class= "ui search" onsubmit="return false;">
+     <div class="ui big fluid icon input">
+      <input type="text" autofocus placeholder="Search...">
+      <i class="circular search link icon"></i>
+     </div>
+    </form>
+    <div class="center aligned ui container">
+      <a href="https://en.wikipedia.org/wiki/Special:Random" class="ui button">
+      <i class="shuffle icon"></i>
+      Click here for random article
+      </a>
+    </div>
+    
+    <div id="results" class="ui divided items"></div>
+  </div>
+</body>
+</html>
